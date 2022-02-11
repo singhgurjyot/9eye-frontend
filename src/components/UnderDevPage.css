@@ -1,0 +1,74 @@
+@font-face{
+	src: url('./assets/fonts/Gilroy-ExtraBold.ttf');
+	font-family: gilroy-extra-bold;
+}
+.Heading{
+   font-size: 36pt;
+   width: 50%;
+   margin-bottom: 1.5rem;
+   font-family: gilroy-extra-bold;
+   color: #262626;
+}
+.Text{
+    color: #333333;
+    width: 25%;
+    font-size: 13pt;
+    margin-bottom: 2.5rem;
+}
+
+.Btn{
+    cursor: pointer;
+    font-size: 12pt;
+    color: #f8f8f8;
+    padding: 0.8rem 1.5rem;
+    width: max-content;
+    font-family: gilroy-extra-bold;
+    border-radius: 2rem;
+    text-align: center;
+    border: none;
+    background-image: linear-gradient(to right, rgb(189, 107, 183), rgb(141, 53, 135));
+}
+
+.content{
+    flex: 1;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.main{
+    height: 100vh;
+    background-image: url('./assets/Under_development.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 1280px){
+    .Btn{
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .Heading{
+        font-size: 27pt;
+    }
+    .Text{
+        font-size: 10pt;
+    }
+    .Btn{
+        padding: 8px 25px;
+        font-size: 0.9rem;
+    }
+    .main{
+        height: 75vh;
+    }
+    .content{
+        margin-top: 8%;
+    }
+}
+

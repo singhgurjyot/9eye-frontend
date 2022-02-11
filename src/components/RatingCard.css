@@ -1,0 +1,70 @@
+@font-face{
+    font-family: gilroy-medium-italic;
+    src: url(./assets/fonts/Gilroy-MediumItalic.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: gilroy-regular;
+    src: url(./assets/fonts/Gilroy-Regular.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: gilroy-extra-bold;
+    src: url(./assets/fonts/Gilroy-ExtraBold.ttf);
+    font-style: normal;
+}
+
+.RatingCard{
+    margin: 0rem;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+.Rating-card-details{
+    color: #333333;
+    font-family: gilroy-extra-bold;
+}
+.review-ttle{
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.reviewerInfo{
+    font-family: gilroy-medium-italic;
+    color: #333333;
+    font-size: small;
+}
+.Description{
+   font-family: gilroy-regular;
+   color: #333333;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   height: 57px;
+}
+.ReadMore{
+	font-family: gilroy-regular;
+    text-align: right;
+    color: #333333;
+    font-size: smaller;
+}
+
+.stars-container-rating{
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .reviewerInfo{
+        margin: 0.5rem 0;
+    }
+    .review-ttle{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .Description{
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        height: 35px;
+    }
+}

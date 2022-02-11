@@ -1,0 +1,134 @@
+.popup_page{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 0.2s ease-in-out;
+    align-items: center;
+    z-index: 10;
+}
+
+.popup_card{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 25rem;
+    height: max-content;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.popup_title{
+    margin-top: 2rem;
+    font-family: gilroy-extra-bold;
+    font-size: 1.5rem;
+    color: #262626;
+    margin-bottom: 0;
+}
+
+.popup_input{
+    font-family: gilroy-regular;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0.8rem 2rem;
+    border-radius: 60px;
+    color: #333333;
+    border: none;
+    width: 80%;
+}
+
+.popup_input_title{
+    font-family: gilroy-extra-bold;
+    font-size: 1.5rem;
+    color: #262626;
+    margin: 0;
+}
+
+.popup_input_error{
+    box-shadow: inset 0 0 0 2px #fcbdb8;
+}
+
+.popup_close_button{
+    border-radius: 50%;
+    background-color: #eb8888;
+    width: 1.5rem;
+    cursor: pointer;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.spinner{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: .25em solid #771572;
+    border-right-color: #efe0ee;
+    border-radius: 50%;
+    animation: spinner 0.9s infinite ease-in-out;
+}
+
+.success{
+    height: 3.5rem;
+    width: 3.5rem;
+    animation: grow_shrink 1.5s infinite ease-in-out;
+}
+
+.popup_btn{
+    margin-top: 1.5rem;
+  width: max-content;
+  cursor: pointer;
+  border-radius: 60px;
+  background: linear-gradient(90deg, #C271BD, #8A3585);
+  border: none;
+  color: #F8F8F8;
+  font-size: 1.1rem;
+  font-family: gilroy-extra-bold;
+  padding: 10px 25px;
+}
+
+.popup_btn:hover{
+  background: linear-gradient(90deg, #C271BDe9, #8A3585e9);
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.16);
+}
+
+.add-address-error{
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@keyframes spinner {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow_shrink {
+    50% {
+        transform: scale(0.8);
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

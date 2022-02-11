@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.813" height="38.456" viewBox="0 0 42.813 38.456">
+  <g id="briefcase-solid" transform="translate(1.275 1.275)">
+    <path id="Path_683" data-name="Path 683" d="M19.377,75.336A4.034,4.034,0,0,0,15.6,79.41v21.721a4.035,4.035,0,0,0,3.777,4.075H52.086a4.034,4.034,0,0,0,3.777-4.075V79.41a4.035,4.035,0,0,0-3.777-4.075ZM43.2,72.318A2.989,2.989,0,0,0,40.4,69.3H31.067a2.989,2.989,0,0,0-2.8,3.018v3.018H43.2Z" transform="translate(-15.6 -69.3)" fill="none" stroke="#771572" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.55"/>
+    <path id="Path_684" data-name="Path 684" d="M15.6,231.6H55.854v2.854H40.764v4.122c0,.991-.561,1.791-1.256,1.791H31.963c-.7,0-1.256-.8-1.256-1.791v-4.122l-15.1-.012V231.6Z" transform="translate(-15.6 -216.936)" fill="#771572"/>
+  </g>
+</svg>

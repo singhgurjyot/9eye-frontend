@@ -1,0 +1,18 @@
+.par {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+}
+
+.mainsection {
+  width: 95%;
+  padding: 0px 0px 0 20px;
+}
+
+.mainsection-heading {
+  padding-left: 10px;
+  font-size: 2rem;
+  padding-bottom: 30px;
+  border-bottom: 1px solid;
+  font-family: gilroy-extra-bold;
+}

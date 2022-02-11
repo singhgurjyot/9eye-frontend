@@ -1,0 +1,72 @@
+.map-container{
+	width: 100%;
+	height: 75vh;
+	border: 20px solid #F7F7F7;
+	border-radius: 15px;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+}
+
+.popup-window{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup-store-name{
+	font-size: 1.2rem;
+	margin-bottom: 0;
+	color: #333333;
+	font-family: gilroy-extra-bold;
+}
+
+.popup-store-type{
+	margin-bottom: 1rem;
+}
+
+.popup-stars-container{
+	display: flex;
+	margin: 0 1rem 1.5rem 1rem;
+}
+
+.popup-button{
+	cursor: pointer;
+	color: #F9F9F9;
+	text-decoration: none;
+	border: none;
+	padding: 0.5rem 1rem;
+	background: linear-gradient(-90deg, #C271BD, #8A3585);
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+.popup-button:hover{
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(-90deg, #C271BDe9, #8A3585e9);
+}
+
+
+@media screen and (max-width: 1366px)
+{
+	
+
+}
+
+
+@media screen and (max-width: 1280px)
+{
+	.map-container{
+		
+		height: 70vh;
+	}
+	
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 1024px)
+{
+	.map-container{
+		
+		height: 70vh;
+	}
+
+}

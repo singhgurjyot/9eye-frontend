@@ -1,0 +1,58 @@
+.head{
+    color: #333333;
+    font-family: gilroy-extra-bold;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.RatingBox{
+    border-radius: 2rem;
+    background: #F0f0f0;
+    padding: 3rem;
+    width: 35rem;
+}
+
+.review-cards{
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .RatingBox{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1280px) {
+    .RatingBox{
+        padding: 2.5rem;
+        width: 27rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .RatingBox{
+        width: 23rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .RatingBox{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .head{
+        font-size: 1.2rem;
+    }
+    .RatingBox{
+        padding: 2rem;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}

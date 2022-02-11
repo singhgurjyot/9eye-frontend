@@ -1,0 +1,33 @@
+.side-section{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    padding: 0 3rem;
+    border-right: 1px solid #333333;
+}
+
+.side-menu-title{
+    margin-bottom: 0;
+}
+
+.side-menu-name{
+    color: #232323;
+    font-family: gilroy-extra-bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.side-menu{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu-item{
+    margin: 0.3rem 0;
+    color: #232323;
+}
+
+.side-menu-item:hover{
+    color: #8F288A;
+}

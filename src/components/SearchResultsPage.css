@@ -1,0 +1,55 @@
+.SearchCardResult {
+    background-color: #F8F8F8;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-cards-results {
+    margin: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 8rem !important;
+}
+
+@media (max-width: 1440px) {
+    .search-cards-results {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .search-cards-results {
+        margin: 0 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-cards-results {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-cards-results {
+        margin: 0;
+    }
+    .top-container {
+        margin-left:1.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+}

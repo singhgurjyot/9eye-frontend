@@ -1,0 +1,110 @@
+.TimeSet{
+    display: flex;
+    align-items: stretch;
+    background: #f0f0f0;
+    margin: 2rem 0;
+    width: 30rem;
+    padding: 0 3rem;
+    border-radius: 10rem;
+}
+
+.timing{
+    background: #E6E6E6;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    color: #33333348;
+}
+
+.row button{
+    min-width: 18%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #262626;
+    flex: 1;
+    text-align: center;
+    font-family: gilroy-regular;
+    padding: 1rem 0.8rem;
+    &:hover{
+        background-color: #D8D8D8;
+    }
+    &:disabled{
+        cursor:default;
+        color: #929292;
+        &:hover{
+            background-color: #E6E6E6;
+        }
+    }
+    &:active {
+        transform: scale(0.98);
+    }
+    &:focus{
+      background-color: #DFDFDF;
+    }
+}
+
+.row button.active{
+    background-color: #D6B4D4;
+}
+
+@media (max-width: 1440px) {
+    .TimeSet{
+        width: 25rem;
+    }
+    .row button{
+        padding: 1rem 0.6rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .TimeSet{
+        width: 25rem;
+    }
+    .row button{
+        padding: 1rem 0.6rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .TimeSet{
+        width: 25rem;
+    }
+    .row button{
+        padding: 1rem 0.6rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .TimeSet{
+        width: 20rem;
+        border-radius: 3.5rem;
+    }
+    .row button{
+        font-size: 0.8rem;
+        padding: 1rem 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .TimeSet{
+        width: 27rem;
+        border-radius: 10rem;
+    }
+    .row button{
+        padding: 1rem 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .TimeSet{
+        border-radius: 2rem;
+        width: 80%;
+    }
+    .row button{
+        font-size: 0.7rem;
+    }
+}

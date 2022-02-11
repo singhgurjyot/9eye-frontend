@@ -1,0 +1,49 @@
+.heading {
+  border-bottom: 1px solid;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+.appointment-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.appointment {
+  width: 420px;
+  padding: 10px 10px 30px 10px !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.61);
+}
+
+.button {
+  padding: 15px;
+  width: 90%;
+}
+
+.appointment p {
+  font-size: larger;
+}
+
+.appointment h1 {
+  text-align: center;
+  color: #771572;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.appointment-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px) {
+  .appointment-container {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    text-align: center;
+  }
+}

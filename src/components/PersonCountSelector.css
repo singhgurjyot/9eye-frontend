@@ -1,0 +1,32 @@
+.person_count_selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person_count_selector input{
+    display: none;
+}
+
+.userIcon{
+    cursor: pointer;
+    transition: color 200ms;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    .userIcon{
+        width: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .userIcon{
+        width: 1.3rem;
+    }
+}

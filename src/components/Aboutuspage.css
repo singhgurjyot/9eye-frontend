@@ -1,0 +1,38 @@
+.about_us_page {
+	background-color: #EFE0EE;
+	display: flex;
+	flex-direction: column;
+	padding: 6rem 0;
+}
+
+.card_row{
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+	align-self: center;
+}
+
+@media(max-width: 1440px){
+
+}
+
+@media(max-width: 1366px){
+
+}
+
+@media(max-width: 1280px){
+	.card_row{
+		width: 90%;
+	}
+}
+
+@media (max-width: 1024px){
+	.card_row{
+		width: min-content;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px){
+
+}

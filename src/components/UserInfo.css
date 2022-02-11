@@ -1,0 +1,5 @@
+.user-container{
+    padding-top: 4rem;
+    display: flex;
+    min-height: 80vh;
+}

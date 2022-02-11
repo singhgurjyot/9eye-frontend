@@ -1,0 +1,36 @@
+.conformation {
+  background: #f8f8f8;
+  width: 25rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  height: max-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+.p,
+.h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0%;
+  font-size: larger;
+  padding-bottom: 30px;
+}
+
+.btns {
+  width: fit-content;
+  margin: auto;
+}
+
+.btn {
+  margin: 0 20px;
+  width: 150px;
+}
+
+.cancell {
+  z-index: 999 !important;
+}

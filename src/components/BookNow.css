@@ -1,0 +1,69 @@
+.book-now{
+	background-color: #F8F8F8;
+	display: flex;
+	min-height: 90vh;
+	justify-content: space-around;
+	padding-bottom: 5rem;
+}
+
+.search-container{
+	margin: 12vh 7vw 10vh 7vw;
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.map-component{
+	margin-top: 15vh;
+	margin-right: 5vw;
+	flex: 5;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+
+@media (max-width: 1366px) {
+	.map-component{
+		margin-right: 7vw;
+		margin-top: 17vh;
+		flex: 7;
+	}
+	.search-container{
+		margin: 17vh 7vw 10vh 7vw;
+		flex: 3;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 768px) {
+	.book-now{
+		flex-direction: column;
+		padding-bottom: 5rem;
+		justify-content: center;
+		align-items: center;
+	}
+	.map-component{
+		margin: 0;
+		width: 100%;
+	}
+	.search-container{
+		margin-bottom: 2rem;
+		margin-top: 12vh;
+	}
+	.search-items{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 600px) {
+
+}

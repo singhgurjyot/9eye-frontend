@@ -1,0 +1,127 @@
+.card{
+	margin: 0 2em;
+	text-align: center;
+	background-color: white;
+	border-radius: 40px;
+	padding: 2.5rem 2rem;
+	color: #333333;
+	width: 19rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 6px 6px 30px rgba(0,0,0,0.07);
+}
+
+.card-title{
+	font-size: 20pt;
+	font-family: gilroy-extra-bold;
+	margin-bottom: 2rem;
+	margin-top: 0;
+}
+
+.card-descriptionText{
+	font-size: 14pt;
+	width: 12em;
+	margin-bottom: 2rem;
+}
+
+.card-btn{
+	cursor: pointer;
+	font-size: 12pt;
+	padding: 0.7em 1.7em;
+	border-radius: 30px;
+	border: none;
+	background: linear-gradient(-90deg, #C271BD, #8A3585);
+	color: #ffffff;
+	font-family: gilroy-extra-bold;
+}
+
+.card-btn:hover{
+	box-shadow: 3px 3px 20px rgba(0,0,0,0.16);
+	background: linear-gradient(-90deg, #C271BDe9, #8A3585e9);
+}
+
+@media (max-width: 1440px) {
+	.card-title{
+		font-size: 18pt;
+	}
+	.card-descriptionText{
+		font-size: 13pt;
+		width: 12em;
+	}
+	.card{
+		border-radius: 40px;
+		width: 15rem;
+	}
+}
+
+@media (max-width: 1280px) {
+	.card-title{
+		font-size: 14pt;
+	}
+	.card-descriptionText{
+		font-size: 12pt;
+		width: 13rem;
+	}
+	.card{
+		margin: 0 1.5rem;
+		border-radius: 40px;
+		padding: 2.5rem 2rem;
+		width: 12rem;
+	}
+	.card-btn{
+		font-size: 11pt;
+		padding: 0.7em 1.3em;
+		border-radius: 30px;
+	}
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+	.card{
+		margin: 5rem 0;
+		width: 20rem;
+	}
+	.card-title{
+		font-size: 22pt;
+	}
+	.card-descriptionText{
+		font-size: 16pt;
+		width: 17rem;
+	}
+	.card-btn{
+		font-size: 14pt;
+		padding: 0.7em 1.7em;
+		border-radius: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.card{
+		margin: 3rem 0;
+		width: 20rem;
+	}
+	.card-title{
+		font-size: 20pt;
+	}
+	.card-descriptionText{
+		font-size: 15pt;
+		width: 17rem;
+	}
+	.card-btn{
+		font-size: 12pt;
+		padding: 0.7em 1.7em;
+		border-radius: 30px;
+	}
+}
+
+@media (max-width: 600px) {
+	.card{
+		margin: 4rem 0;
+		width: 14rem;
+	}
+	.card-descriptionText{
+		font-size: 15pt;
+		width: 13rem;
+	}
+}

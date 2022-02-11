@@ -1,0 +1,278 @@
+
+.search_card {
+    border-radius: 1rem;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    height: 14rem;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.search_card_img {
+    border-radius: 0.5rem;
+    width: 14rem;
+    height: 100%;
+    background-color: #cbcbcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.store_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.search_card_details {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 2rem;
+    height: 100%;
+}
+
+.shop_name {
+    margin: 0;
+    font-size: 1.7rem;
+    font-family: gilroy-extra-bold;
+    color: #333333;
+    min-height: 2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.shop_class {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.shop_address {
+    font-size: 1rem;
+    margin-top: 0;
+    min-height: 1.2rem;
+    max-height: 2.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.shop_appointment_fee{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.search_card_btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: gilroy-extra-bold;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: #F9F9F9;
+    background: linear-gradient(-90deg, #C271BD, #8A3585);
+}
+
+.search_card_btn:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(-90deg, #C271BDe9, #8A3585e9);
+}
+
+.search_card_stars_container {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.appointment_cost{
+    margin: 1rem 0;
+    margin-top: 0;
+    font-family: gilroy-extra-bold;
+    color: #333333;
+}
+@media (max-width: 1440px) {
+    .search_card {
+        width: 30rem;
+        height: 12rem;
+    }
+    .shop_name {
+        margin: 0;
+        font-size: 1.4rem;
+        min-height: 1.7rem;
+        font-family: gilroy-extra-bold;
+        color: #333333;
+    }
+    .search_card_btn {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .shop_class {
+        font-size: 0.9rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+    .search_card_img {
+        width: 12rem;
+    }
+    .shop_address {
+        font-size: 0.8rem;
+        min-height: 1.2rem;
+        max-height: 2.2rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .appointment_cost{
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .search_card {
+        width: 27rem;
+        height: 10rem;
+    }
+    .search_card_img {
+        width: 9.5rem;
+    }
+    .shop_name {
+        margin: 0;
+        font-size: 1.1rem;
+        min-height: 1.5rem;
+    }
+    .shop_address {
+        font-size: 0.72rem;
+        min-height: 1.1rem;
+        max-height: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .search_card {
+        width: 22rem;
+        height: 10rem;
+    }
+    .shop_name {
+        font-size: 1.1rem;
+        min-height: 1.4rem;
+    }
+    .search_card_btn {
+        font-size: 0.9rem;
+    }
+    .search_card_img {
+        width: 9rem;
+    }
+    .shop_address {
+        font-size: 0.72rem;
+        min-height: 1rem;
+        max-height: 1.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .search_card {
+        width: 30rem;
+        height: 11.1rem;
+    }
+    .shop_name {
+        margin: 0;
+        font-size: 1.2rem;
+        min-height: 1.5rem;
+        font-family: gilroy-extra-bold;
+        color: #333333;
+    }
+    .search_card_btn {
+        font-size: 1rem;
+    }
+    .search_card_img {
+        width: 10rem;
+    }
+    .shop_address {
+        font-size: 0.7rem;
+        min-height: 1.3rem;
+        max-height: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .appointment_cost{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .search_card {
+        width: 80%;
+        height: 9rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    .shop_name {
+        font-size: .95rem;
+        min-height: 1.1rem;
+    }
+    .shop_class {
+        font-size: 0.8rem;
+    }
+    .search_card_img {
+        width: 8rem;
+    }
+    .search_card_stars_container {
+        display: flex;
+        margin-bottom: 0.5rem;
+        width: 6rem;
+    }
+    .search_card_stars_container div {
+        width: min-content;
+        height: min-content;
+    }
+    .search_card_details {
+        margin-left: 0.8rem;
+        height: 100%;
+    }
+    .search_card_btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+    .shop_address {
+        min-height: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .shop_appointment_fee{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .search_card {
+        width: 80%;
+        height: 10rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    .shop_name {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .search_card_btn {
+        font-size: .8rem;
+    }
+    .search_card_img {
+        width: 7rem;
+    }
+    .shop_address {
+        min-height: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+}

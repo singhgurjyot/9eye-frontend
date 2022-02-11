@@ -1,0 +1,55 @@
+#side_drawer{
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    opacity: 0.95;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.side_logo_container{
+    cursor: pointer;
+}
+
+.side_logo{
+    margin:auto;
+    position:absolute;
+    width: 200px;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.side_navBtn{
+    cursor: pointer;
+    display:block;
+    color: #333333;
+    text-align:center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.side_li{
+    list-style-type: none;
+}
+
+.side_ul{
+    margin: 2rem 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.side_cross{
+    cursor: pointer;
+    opacity: 0.3;
+    z-index: 5;
+}
+
+.side_cross:hover {
+    opacity: 1;
+}

@@ -1,0 +1,51 @@
+.search-cards {
+    margin: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view_more_button {
+    width: max-content;
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(-90deg, #C271BD, #8A3585);
+    color: #f8f8f8;
+    font-family: gilroy-extra-bold;
+    border-radius: 2rem;
+}
+
+.view_more_button:hover{
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(-90deg, #C271BDe9, #8A3585e9);
+}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1280px) {
+    .search-cards {
+        margin: 3rem 0;
+        width: 80%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    .search-cards {
+        margin: 1rem 0;
+        width: 10;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-cards {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 90vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .search-cards::-webkit-scrollbar {
+        display: none;
+    }
+}

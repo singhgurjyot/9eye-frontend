@@ -1,0 +1,140 @@
+.footer{
+    z-index: 2;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.03);
+}
+
+.menus{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 3rem;
+}
+
+.row {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: none;
+}
+
+.list_header{
+    font-size: 1.2rem;
+    font-family: gilroy-extra-bold;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+.list{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.col ul li{
+    color: #333333;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.col ul li a{
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    color: #333333;
+}
+
+.col ul li a:hover{
+    color: #B66AB1;
+}
+
+.email_link{
+    color: #771572 !important;
+}
+
+.email_link:hover{
+  color: #B66AB1 !important;
+  text-decoration: none;
+}
+
+.footer_icon{
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    fill: #333333;
+}
+
+.footer_icon:hover{
+    fill: #B66AB1;
+}
+
+.app_link_container{
+    text-align: center;
+}
+
+.app_link{
+    text-decoration: none;
+    color: #333333;
+}
+
+.app_link:hover{
+    color: #B66AB1;
+}
+
+.android_logo{
+    fill: #771572;
+    width: 40px;
+    height: 40px;
+}
+
+.android_logo:hover{
+    fill: #32DE84;
+}
+.copyright{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: #333333;
+}
+
+.copyright p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 1440px) {
+    .menus{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer{
+        height: max-content;
+        width: 100%;
+    }
+    .menus{
+        flex-wrap: wrap;
+    }
+    .col{
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .col ul li{
+        font-size: 0.9rem;
+    }
+    .list_header{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}

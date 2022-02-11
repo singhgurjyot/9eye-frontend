@@ -1,0 +1,481 @@
+.ngo-page{
+    margin-top: 59px;
+}
+
+.ngo-header{
+    height: 65vh;
+}
+
+.tablet{
+    display: none;
+}
+
+.mobile{
+    display: none;
+}
+
+.ngo-header-imgs{
+    width: 100%;
+    height: 50vh;
+    background: url("./assets/ngo_header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 3rem 3rem;
+    position: absolute;
+}
+
+.ngo-header-img-container{
+    position: relative;
+    z-index: 0;
+}
+
+.ngo-header-img-overlay{
+    position: relative;
+    height: 65vh;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.ngo-header-details{
+    position: relative;
+    z-index: 2;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ngo-heading{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+}
+
+.ngo-name{
+    font-family: gilroy-extra-bold;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+.ngo-byline{
+    color: white;
+}
+
+.ngo-header-line{
+    border-radius: 2rem;
+    width: 30%;
+    height: 4px;
+    background: white;
+}
+
+.ngo-quote{
+    font-family: gilroy-extra-bold;
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+    width: 25rem;
+    margin-left: 10rem;
+}
+
+.ngo-donate-btn{
+    background: linear-gradient(90deg, #c271bd, #8a3585);
+    font-family: gilroy-extra-bold;
+    font-size: 1.1rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.donate-btn-header{
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+}
+
+.ngo-donate-btn:hover{
+    opacity: 0.9;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.16);
+}
+
+.ngo-nav{
+    width: 95%;
+    float: right;
+    display: flex;
+    height: 15vh;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.we-em{
+    color: #fff;
+    font-family: gilroy-extra-bold;
+    z-index: 3;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.ngo-nav-item{
+    color: #232323;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4rem;
+}
+
+.ngo-nav-item:hover{
+    background-color: #efefef;
+}
+
+.ngo-nav-item > a{
+    display: flex;
+    align-items: center;
+}
+
+.ngo-nav-item > p{
+    margin: 0;
+}
+
+.ngo-nav-icon{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1.5rem;
+}
+
+.ngo-section{
+    display: flex;
+    margin: 5rem 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ngo-section-title{
+    color: #333333;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    font-family: gilroy-extra-bold;
+}
+
+.ngo-section-subtitle{
+    font-family: gilroy-regular-italic;
+    font-size: 1.2rem;
+}
+
+.ngo-section-line{
+    width:10%;
+    text-align: center;
+    background-color: #333333;
+    height: 5px;
+    border: none;
+    border-radius: 4rem;
+}
+
+.ngo-section-column{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.achievements{
+    width: 100%;
+}
+
+.vertical-timeline-element-title{
+    font-family: gilroy-extra-bold;
+    font-size: 1.5rem;
+}
+
+.vertical-timeline-element-content{
+    border-radius: 1.5rem !important;
+}
+
+.ngo-section-para{
+    width: 70%;
+}
+
+.ngo-section-para > a{
+    color: #74156F;
+}
+
+.ngo-section-para > a:hover{
+    opacity: 0.8;
+}
+
+.ngo-section-column > .ngo-section-title{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.achievements > .ngo-section-title{
+    margin: 1.5rem 0;
+}
+
+.ngo-section-imgs{
+    display: flex;
+    height: 10rem;
+    width: 80%;
+    align-self: center;
+}
+
+.ngo-section-img-container{
+    margin: 0 auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    max-height: 100%;
+    width: 40%;
+}
+
+.ngo-section-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ngo-section-list{
+    align-self: center;
+    width: 50%;
+}
+
+.ngo-special-box{
+    margin: 2rem 0;
+    width: 70%;
+    padding: 2rem 0;
+    background: rgb(234,234,234);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ngo-special-box > .ngo-section-title{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.ngo-special-box-para{
+    color: #333333;
+    width: 70%;
+    text-align: center;
+}
+
+.donate{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ngo-about-us{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diploma-container{
+    width: 100%;
+}
+
+.diploma{
+    width: 50%;
+}
+
+.diploma > .ngo-section-title {
+    margin-top: 5rem;
+}
+
+.diploma > .ngo-section-para {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .ngo-nav{
+        width: 87%;
+    }
+    .ngo-nav-item{
+        font-size: 1.2rem;
+    }
+    .ngo-nav-icon{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media(max-width: 1366px) {
+    .ngo-nav{
+        width: 80%;
+    }
+    .we-em{
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .ngo-header{
+        height: 70vh;
+    }
+    .ngo-header-img-overlay{
+        height: 70vh;
+    }
+    .ngo-header-imgs{
+        height: 55vh;
+    }
+    .ngo-header-details{
+        height: 55vh;
+    }
+    .ngo-quote{
+        font-size: 1.5rem;
+        width: 20rem;
+    }
+    .ngo-nav{
+        width: 87%;
+    }
+    .ngo-nav-item{
+        padding: 1rem 2rem;
+    }
+    .we-em{
+        margin-right: 3rem;
+    }
+    .ngo-special-box > .ngo-section-title{
+        width: 70%;
+    }
+    .ngo-special-box-para{
+        width: 80%;
+    }
+    .ngo-section-para{
+        width: 80%;
+    }
+    .ngo-about-us > .ngo-section-column{
+        width: 70%;
+    }
+    .ngo-section-list{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ngo-quote{
+        margin-left: 7rem;
+        margin-top: 2rem;
+    }
+    .ngo-nav{
+        width: 75%;
+        margin-right: 2rem;
+    }
+    .we-em{
+        margin-right: 6rem;
+    }
+    .ngo-nav-item{
+        font-size: 1rem;
+        padding: 0.8rem 1.7rem;
+    }
+    .ngo-nav-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    .ngo-section-title{
+        font-size: 1.7rem;
+    }
+    .ngo-section-subtitle{
+        font-size: 1rem;
+    }
+    .ngo-section-imgs{
+        width: 100%;
+    }
+    .ngo-special-box{
+        width: 90%;
+    }
+    .diploma{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: block;
+        height: 55vh;
+    }
+    .we-em{
+        display: none;
+    }
+    .ngo-nav{
+        width: 90%;
+        float: none;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .ngo-nav-item{
+        background-color: #efefef;
+    }
+    .donate-btn-header{
+        margin-right: 6rem;
+    }
+    .ngo-section{
+        flex-direction: column;
+        margin: 3rem 3rem;
+    }
+    .ngo-section-column{
+        width: 90%;
+    }
+    .training > .ngo-section-column > .ngo-special-box{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .ngo-header{
+        height: auto;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        height: 55vh;
+    }
+    .ngo-header-details{
+        align-items: center;
+    }
+    .ngo-quote{
+        margin: auto;
+        text-align: center;
+    }
+    .donate-btn-header{
+        margin: auto;
+        margin-top: 0;
+    }
+    .ngo-nav{
+        flex-direction: column;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .ngo-nav-item{
+        margin: 1rem 0;
+    }
+    .ngo-about-us > .ngo-section-column{
+        width: 100%;
+    }
+    .ngo-section-column{
+        width: 100%;
+    }
+    ul{
+        padding-left: 0;
+    }
+}

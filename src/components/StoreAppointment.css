@@ -1,0 +1,76 @@
+.store-page{
+	display: flex;
+	justify-content: center;
+	padding: 10vh;
+	background-color: #F8F8F8;
+}
+
+.store_details{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.calendar_container{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.book_appt_btn{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: max-content;
+	font-size: 1.1rem;
+	color: #f8f8f8;
+	border: none;
+	border-radius: 2rem;
+	font-family: gilroy-extra-bold;
+	padding: 0.8rem 2rem;
+	background: linear-gradient(90deg, #C271BD, #8A3585);
+}
+
+.book_appt_btn:hover{
+	background: linear-gradient(90deg, #C271BDe9, #8A3585e9);
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.16);
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1366px) {
+	.store-page{
+		padding: 7vh;
+		padding-top: 10vh;
+	}
+}
+
+@media (max-width: 1280px) {
+	.store-page{
+		padding: 5vh;
+		padding-top: 12vh;
+	}
+}
+
+@media (max-width: 768px) {
+	.store-page{
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 600px) {
+	.store-page{
+		padding: 10%;
+		margin-top: 5rem;
+	}
+	.book_appt_btn{
+		padding: 0.6rem 1.5rem;
+		font-size: 1rem;
+	}
+}

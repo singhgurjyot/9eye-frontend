@@ -1,0 +1,128 @@
+.SearchCardTop{
+    margin: 5% 30%;
+}
+
+.SearchCardTop h1{
+    text-align: center;
+    color: rgb(3, 3, 3);
+}
+
+.SearchCardTop input{
+    width: 40rem;
+    padding: 3%;
+    position: relative;
+}
+.line{
+    display: flex;
+    
+}
+.SearchCardTop button.searchButton{
+    // position: absolute;
+    // top:8.1rem;
+    // left: 64.6rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-weight: 500;
+    background: linear-gradient(to left, #771572 0%, #d89dbb 100%);
+    transition: all 1s ease-in-out;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+    transition: 0.2s all; 
+    &:active { 
+        transform: scale(0.98); 
+        box-shadow: 3px 2px 22px 1px #963f91b0; 
+    }
+    &:hover{
+        background: linear-gradient(to left, #7c1f78 0%, #b8859f 100%);
+        
+    }
+}
+
+// .SearchCardTop button.searchButton::after{
+//     content: "";
+//     position: absolute;
+//     border-radius: 50%;
+//     top: -0.1rem;
+//     text-align: center;
+//     width: 3rem;
+//     height: 3rem;
+//     border: 1px solid black;
+//     background: white;
+// }
+
+
+
+@media screen and (min-width:350px){
+    .SearchCardTop{
+        margin: 10% 10%;
+    }
+    
+    .SearchCardTop h1{
+        font-size: 1rem;
+    }
+    
+    .SearchCardTop input{
+        width: 16rem;
+        padding: 4%;
+    }
+    
+    .SearchCardTop button.searchButton{
+        margin: 3%;
+        padding: .65rem 1.4rem;
+    }
+}
+@media screen and (min-width:535px){
+    .SearchCardTop h1{
+        font-size: 2rem;
+    }
+    
+    .SearchCardTop input{
+        width: 22rem;
+    }
+    
+    .SearchCardTop button.searchButton{
+        top:14.2%;
+        left: 63%;
+        padding: 1rem 2rem;
+    }
+}
+@media screen and (min-width:700px){
+    .SearchCardTop input{
+        width: 30rem;
+        padding-left: 8%;
+        margin: 3% auto;
+    }
+    .SearchCardTop{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .SearchCardTop button.searchButton{
+        top:16.5%;
+        left: 72%;
+        padding: 1.3rem 2.5rem;
+    }
+}
+@media screen and (min-width:1200px){
+    .SearchCardTop{
+        margin: 5% 30%;
+    }
+    
+    .SearchCardTop h1{
+        text-align: center;
+    }
+    
+    .SearchCardTop input[type="text"]{
+        width: 40rem;
+        padding: 3%;
+        background: #EBEBEB;
+    }
+    
+    .SearchCardTop button.searchButton{
+        
+        margin: 3%;
+        padding: .2rem 3rem;
+    }
+}
