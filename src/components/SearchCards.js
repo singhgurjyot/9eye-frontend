@@ -12,28 +12,43 @@ function SearchCards(props){
     const [data, setData] = useState([]);
     const [fdata, setFdata]=useState([])
 
-    const sampleData = [{storeid: 123,
-      StoreName: "ABC store",
-      Store_Type: "Clinic",
-      Org_type: "Eye",
-      OverallRating: 3,
-      StoreAddress: "ABC Ave 123",
-      Price: 2345},
+    const sampleData = [{
+        "StoreName" : "ABC Store",
+        "StoreAddress" : "ABC Ave 123",
+        "Email" : "abc@abc.com",
+        "Username":"abc",
+        "Password":"abc",
+        "Phone":9999999999,
+        "Frontpic": null,
+        "Backpic":null,
+        "Latitude": 43.393282,
+        "Longitude": -80.415023,
+        "Price": 100,
+        "Org_type": "Eye",
+        "PersonLimit":50,
+        "Otherpic": null
 
-      {storeid: 456,
-        StoreName: "XYZ store",
-        Store_Type: "Hospital",
-        Org_type: "Eye",
-        OverallRating: 5,
-        StoreAddress: "ABC Ave 123",
-        Price: 100}]
-  /*  setData([{storeid: 123,
-    StoreName: "ABC store",
-    Store_Type: "Clinic",
-    Org_type: "Eye",
-    OverallRating: 3,
-    StoreAddress: "ABC Ave 123",
-    Price: 2345}])*/
+        },
+
+        {
+            "StoreName" : "XYZ Store",
+            "StoreAddress" : "XYZ Ave 123",
+            "Email" : "xyz@xyz.com",
+            "Username":"xyz",
+            "Password":"xyz",
+            "Phone":1111111111,
+            "Frontpic": null,
+            "Backpic":null,
+            "Latitude": 43.409178,
+            "Longitude": -80.467495,
+            "Price": 200,
+            "Org_type": "Eye",
+            "PersonLimit":10,
+            "Otherpic": null
+
+            },
+
+      ]
     const shuffle = (array) => {
         var currentIndex = array.length, temporaryValue, randomIndex;
         while (0 !== currentIndex) {
@@ -49,12 +64,12 @@ function SearchCards(props){
     }
 
     useEffect(() => {
-        if(Array.isArray(props.data)){
-            let data=props.data
+        if(Array.isArray(sampleData)){
+            let data=sampleData
             shuffle(data)
             setData(data)
         } else {
-            let data=props.data
+            let data=sampleData
             setData(data)
         }
         if(props.filter==='Category'){
@@ -66,18 +81,18 @@ function SearchCards(props){
     }, [props.data])
     return(
         <div className="search-cards">
-            {Array.isArray(sampleData)?sampleData.length===0?(
+            {Array.isArray(data)?data.length===0?(
                 <div></div>
-                ):(sampleData.map((val, i) => (
+                ):(data.map((val, i) => (
                     (i<3)?(<SearchCard
                                 style={stylesheet}
                                 key={val.storeid}
                                 id={val.storeid}
                                 data={val}
                                 />):null
-                    ))):<h4>{sampleData}</h4>
+                    ))):<h4>{data}</h4>
             }
-            {Array.isArray(sampleData)?sampleData.length >= 3?(
+            {Array.isArray(data)?data.length >= 3?(
                 <Link to="/book_now/results/">
                     <div className="view_more_button">See All Results</div>
                 </Link>
@@ -87,7 +102,7 @@ function SearchCards(props){
 }
 
 const mapStateToProps = state => ({
-  data: state.stores.details,
+  //data: state.stores.details,
   filter: state.filter
 })
 

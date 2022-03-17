@@ -15,7 +15,7 @@ import { panToTrigger1 } from "../actions/locationAction";
 import { backupDomain } from "../backup/backupDomain";
 
 const libraries = ["places"];
-const locationMarker = `${backupDomain}/api/media/location.png`;
+const locationMarker = `https://drive.google.com/uc?id=1dZh8nyHzEHdGG5bnfEbpc2LRrCMjaLpD`;
 
 const mapContainerStyle = {
   width: "100%",
@@ -29,16 +29,55 @@ const options = {
 };
 
 const center = {
-  lat: 28.6304,
-  lng: 77.2177,
+  lat: 43.4643,
+  lng: -80.5204,
 };
 
 function GMap(props) {
   const [stores, setStores] = useState([]);
   const [selected, setSelected] = useState(null);
 
+  const sampleData = [{
+      "StoreName" : "ABC Store",
+      "StoreAddress" : "ABC Ave 123",
+      "Email" : "abc@abc.com",
+      "Username":"abc",
+      "Password":"abc",
+      "Phone":9999999999,
+      "Frontpic": null,
+      "Backpic":null,
+      "Latitude": 43.393282,
+      "Longitude": -80.415023,
+      "Price": 100,
+      "Org_type": "Eye",
+      "PersonLimit":50,
+      "Otherpic": null
+
+      },
+
+      {
+          "StoreName" : "XYZ Store",
+          "StoreAddress" : "XYZ Ave 123",
+          "Email" : "xyz@xyz.com",
+          "Username":"xyz",
+          "Password":"xyz",
+          "Phone":1111111111,
+          "Frontpic": null,
+          "Backpic":null,
+          "Latitude": 43.409178,
+          "Longitude": -80.467495,
+          "Price": 200,
+          "Org_type": "Eye",
+          "PersonLimit":10,
+          "Otherpic": null
+
+          },
+
+    ]
+
+
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBz82qkO3WWUUiG8SR9cz6IqQKsOMcwwpM",
+    googleMapsApiKey: "AIzaSyCsleAvbxjLjALSNl4UHfKQz5KFW9QuLss",
     libraries,
   });
 
@@ -86,8 +125,8 @@ function GMap(props) {
   }
   // Geolocation Stop
   useEffect(() => {
-    setStores(props.stores);
-  }, [props.stores]);
+    setStores(sampleData);
+  }, [sampleData]);
 
   if (loadError) return "Error Loading Maps";
   if (!isLoaded) return "Loading Maps";
@@ -150,7 +189,7 @@ function GMap(props) {
           <Marker
             position={{ lat: props.gps.coords.lat, lng: props.gps.coords.lng }}
             icon={{
-              url: `${backupDomain}/api/media/user_location.png`,
+              url: `https://drive.google.com/uc?id=1dZh8nyHzEHdGG5bnfEbpc2LRrCMjaLpD`,
               origin: new window.google.maps.Point(0, 0),
               anchor: new window.google.maps.Point(10, 20),
             }}
@@ -166,7 +205,7 @@ const mapStateToProps = (state) => ({
   location: state.searchLocation.coords,
   gps: state.gps,
   pan: state.panTrigger,
-  stores: state.stores.details,
+  //stores: state.stores.details,
   pan1: state.panTrigger1,
 });
 
