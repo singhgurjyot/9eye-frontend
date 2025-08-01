@@ -29,8 +29,8 @@ const options = {
 };
 
 const center = {
-  lat: 43.4643,
-  lng: -80.5204,
+  lat: 28.635990, 
+  lng: 77.217795,
 };
 
 function GMap(props) {
@@ -46,8 +46,8 @@ function GMap(props) {
       "Phone":9999999999,
       "Frontpic": null,
       "Backpic":null,
-      "Latitude": 43.393282,
-      "Longitude": -80.415023,
+      "Latitude": 28.754987,
+      "Longitude": 77.091768,
       "Price": 100,
       "Org_type": "Eye",
       "PersonLimit":50,
@@ -64,8 +64,8 @@ function GMap(props) {
           "Phone":1111111111,
           "Frontpic": null,
           "Backpic":null,
-          "Latitude": 43.409178,
-          "Longitude": -80.467495,
+          "Latitude": 28.647706, 
+          "Longitude": 77.121450,
           "Price": 200,
           "Org_type": "Eye",
           "PersonLimit":10,
